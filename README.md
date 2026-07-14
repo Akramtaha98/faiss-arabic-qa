@@ -22,7 +22,6 @@ Results were independently reproduced end-to-end on two architecturally differen
 ## Repo structure
 
 ```
-paper/      IEEE conference paper (LaTeX source + compiled PDF)
 code/       Reproduction scripts
 data/       Small, redistributable dataset files (ARCD + TyDi QA Arabic subset)
 results/    results.json — the numbers behind every table in the paper
