@@ -13,13 +13,5 @@ results/_tmp_index_*.faiss
 results/*.progress
 texts/
 
-# LaTeX build artifacts
-paper/*.aux
-paper/*.log
-paper/*.bbl
-paper/*.blg
-paper/*.out
-paper/*.synctex.gz
-
 # OS
 .DS_Store

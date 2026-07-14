@@ -15,7 +15,7 @@ BM25 beats a general-purpose multilingual dense retriever by 10–15 recall poin
 | Combined (N=1307) | Flat | 32.3 | 50.4 | 56.4 | 61.9 | .404 |
 | Combined (N=1307) | **BM25** | **44.0** | **66.5** | **72.4** | **77.3** | **.540** |
 
-Full comparison across all four methods (Flat, IVF-PQ, HNSW, BM25) and the accuracy-latency sweeps are in the paper (§V) and [`results/results.json`](results/results.json).
+Full comparison across all four methods (Flat, IVF-PQ, HNSW, BM25) and the accuracy-latency sweeps are in [`results/results.json`](results/results.json).
 
 Results were independently reproduced end-to-end on two architecturally different machines (x86/aarch64 Linux and Apple Silicon macOS), with identical recall/MRR values on both.
 
@@ -61,7 +61,7 @@ This encodes both corpora, builds all four index types, runs the IVF-PQ/HNSW par
 - [ARCD](https://github.com/husseinmozannar/SOQAL) — Arabic Reading Comprehension Dataset, 465 passages / 1,395 questions.
 - [TyDi QA](https://huggingface.co/datasets/google-research-datasets/tydiqa) — gold-passage task, Arabic subset, 842 passages / 921 questions.
 
-Both are included pre-processed in `data/`. See the paper (§III-C) for normalization details.
+Both are included pre-processed in `data/`. Arabic text is normalized before encoding (diacritics and tatweel stripped, alef/ya/ta-marbuta variants unified) — see `normalize_arabic()` in `code/run_experiment.py`.
 
 
 
