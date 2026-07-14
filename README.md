@@ -69,4 +69,4 @@ Both are included pre-processed in `data/`. See the paper (§III-C) for normaliz
 ## License
 
 Code is released under the [MIT License](LICENSE). ARCD and TyDi QA retain their original dataset licenses.
-# faiss-arabic-qa
+
