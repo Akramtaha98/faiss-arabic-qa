@@ -1,0 +1,9 @@
+# CPU-only PyTorch — install this first, from the CPU wheel index:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+transformers>=4.40
+sentencepiece
+faiss-cpu>=1.8
+rank_bm25
+numpy
+pandas
+pyarrow

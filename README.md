@@ -2,8 +2,6 @@
 
 Benchmarking FAISS index types (Flat, IVF-PQ, HNSW) against a BM25 baseline for Arabic question-answering retrieval, evaluated on accuracy, latency, and index size.
 
-**Paper:** [`paper/paper1_faiss_arabic_qa.pdf`](paper/paper1_faiss_arabic_qa.pdf)
-
 ## Key finding
 
 BM25 beats a general-purpose multilingual dense retriever by 10–15 recall points at every k, on every corpus tested — the opposite of what's usually assumed about Arabic retrieval. Within FAISS itself, HNSW is effectively lossless versus exact search, while IVF-PQ trades a small accuracy loss for the smallest index footprint.
